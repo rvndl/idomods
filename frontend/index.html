@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <title>Frontend</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-section">
+        <img src="svg/icon-forma.svg" alt="forma icon" />
+        <p>Forma’sint.</p>
+        <p class="hidden-mobile">idomods &lt;/&gt;</p>
+      </div>
+      <div class="nav-section nav-section-center hidden-mobile">
+        <ol class="nav-list">
+          <li><a class="nav-link">Home</a></li>
+          <li><a class="nav-link">Featured products</a></li>
+          <li><a class="nav-link">Product listing</a></li>
+        </ol>
+      </div>
+      <div class="nav-section nav-section-right hidden-mobile">
+        <img src="svg/icon-user.svg" alt="user icon" />
+        <p>Frontend developer</p>
+      </div>
+      <div class="nav-section mobile-menu">
+        <img src="svg/icon-burger.svg" alt="burgericon" />
+        <p>Menu</p>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <img src="svg/logo-forma.svg" alt="logo forma" class="hero-forma" />
+        <img src="img/hero.png" alt="hero" class="hero-image" />
+      </section>
+      <section class="featured-section">
+        <div>
+          <p class="uppercase">Featured products</p>
+          <h1>Browse featured</h1>
+        </div>
+        <swiper-container
+          id="featured-list"
+          class="featured-list"
+          slides-per-view="4"
+          space-between="10"
+          navigation="true"
+          scrollbar="true"
+          init="false"
+        ></swiper-container>
+      </section>
+      <section class="product-list-secion"></section>
+    </main>
+    <script type="module" src="js/main.mjs"></script>
+  </body>
+</html>
